@@ -3,15 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-import openai
-import requests
-import random
 
-
-openai.api_key = "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"
 TARGET_URL = "https://www.airforce.mil.kr/user/indexSub.action?codyMenuSeq=156893223&siteId=last2&menuUIType=sub&dum=dum&command2=writeEmail&searchCate=&searchVal=&page=1&memberSeqVal=329895870&sodaeVal=1208"
 DRIVER_DIR = "/Users/shimq1/Downloads/chromedriver_mac_arm64/chromedriver"
-
 
 
 # 웹 드라이버 실행 (Chrome 사용 예시)
