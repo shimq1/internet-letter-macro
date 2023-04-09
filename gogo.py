@@ -8,7 +8,7 @@ TARGET_URL = "https://www.airforce.mil.kr/user/indexSub.action?codyMenuSeq=15689
 DRIVER_DIR = "/Users/shimq1/Downloads/chromedriver_mac_arm64/chromedriver"
 
 
-# 웹 드라이버 실행 (Chrome 사용 예시)
+# 웹 드라이버 실행
 driver = webdriver.Chrome(DRIVER_DIR)
 
 
