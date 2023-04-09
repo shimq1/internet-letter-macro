@@ -58,11 +58,15 @@ relationship.send_keys('관계')
 title.send_keys('제목')
 answer = '''
 
-여기에 편지 본문 입력
+여기에 편지 내용 입력
 
 '''
 contents.send_keys(answer)
 password.send_keys('비밀번호(숫자)')
+
+# 편지 길이 확인
+if (len(answer) >= 1200):
+      raise Exception("편지 길이가 1200자를 초과합니다.")
 
 # 작성완료 클릭
 driver.find_element(By.CSS_SELECTOR, "#emailPic-container > form > div.UIbtn > span.wizBtn.large.Ngray.submit > input").click()
